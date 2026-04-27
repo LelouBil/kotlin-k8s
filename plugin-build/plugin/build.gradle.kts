@@ -4,13 +4,19 @@ plugins {
     kotlin("jvm")
     `java-gradle-plugin`
     alias(libs.plugins.pluginPublish)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(gradleApi())
+    implementation("org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:+")
 
     testImplementation(libs.junit)
+
+    implementation("io.fabrikt:fabrikt:+")
+    implementation(libs.kotlinxSerializationJson)
+    implementation(libs.yamlkt)
 }
 
 java {

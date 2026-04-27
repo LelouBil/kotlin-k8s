@@ -8,7 +8,7 @@ import javax.inject.Inject
 const val DEFAULT_OUTPUT_FILE = "template-example.txt"
 
 @Suppress("UnnecessaryAbstractClass")
-abstract class TemplateExtension
+abstract class KotlinK8sExtension
     @Inject
     constructor(
         project: Project,

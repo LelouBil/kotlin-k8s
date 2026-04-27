@@ -11,6 +11,9 @@ kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle"}
 pluginPublish = { id = "com.gradle.plugin-publish", version.ref = "pluginPublish"}
 versionCheck = { id = "com.github.ben-manes.versions", version.ref = "versionCheck"}
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "2.3.20"}
 
 [libraries]
 junit = "junit:junit:4.13.2"
+kotlinxSerializationJson = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.11.0"}
+yamlkt = {module = "net.mamoe.yamlkt:yamlkt", version = "0.13.0"}
